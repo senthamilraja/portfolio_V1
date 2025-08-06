@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senthamil Raja - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center bg-light py-5">
+        <img src="profile_picture_portfolio.png" alt="Senthamil Raja" class="profile-pic mb-3" />
+        <h1 class="fw-bold">Hi, I'm Senthamil Raja B.Tech</h1>
+        <p class="lead text-muted">Aspiring AI & Data Science Engineer</p>
+    </header>
+
+    <section id="about" class="container py-5">
+        <h2 class="mb-3 text-primary">About Me</h2>
+        <p>
+            <class="slide-up"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi there! An enthusiastic and curious learner currently pursuing my Bachelor of Technology in Artificial Intelligence and Data Science at Tagore Institute of Engineering and Technology (2022–2026).
+                <br> Ever since I was introduced to the world of intelligent machines, I’ve been captivated by how data can be transformed into powerful solutions.<br> My academic journey has empowered me with strong fundamentals in Python programming,
+                machine learning, deep learning, and data preprocessing, and I’m actively building hands-on experience through self-initiated projects. I 'm particularly interested in solving real-world problems through AI-driven applications, especially
+                in the fields of image classification, Data Visualization, and predictive analytics. Whether it’s training convolutional neural networks to recognize facial expressions or analyzing datasets to uncover hidden insights, I love working at
+                the intersection of creativity and logic. Outside of coding, I enjoy exploring new tools, reading about emerging AI trends, and polishing my skills in web development (HTML, CSS, Bootstrap) using AI to create interactive, user-friendly
+                applications. I’m not just focused on technology—I believe in continuous growth. I’m working on improving my communication, collaboration, and problem-solving skills, preparing myself to thrive in a team-driven tech environment. <br> &nbsp;&nbsp;&nbsp;&nbsp;🔍
+                I’m currently looking for internship opportunities where I can contribute meaningfully, learn from industry experts, and grow as a future AI engineer.</p>
+    </section>
+
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4 text-primary">Skills</h2>
+            <div class="d-flex flex-wrap gap-3">
+                <span class="badge bg-primary fs-6">Python</span>
+                <span class="badge bg-primary fs-6">Machine Learning</span>
+                <span class="badge bg-primary fs-6">Artificial Intelligence (AI) </span>
+                <span class="badge bg-primary fs-6">Data Science</span>
+                <span class="badge bg-primary fs-6">Data Visualization</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container py-5">
+        <h2 class="mb-4 text-primary">Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Facial Expression Recognition</h5>
+                        <p class="card-text">Built a CNN model to classify human emotions using the FER2013 dataset.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Image Classification Model</h5>
+                        <p class="card-text">Developed an image classifier using deep learning techniques and Python libraries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-3 text-primary">Contact</h2>
+            <p>Email: <a href="mailto:senthamilraja555@gmail.com">senthamilraja555@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/senthamil555" target="_blank">linkedin.com/in/senthamil555</a></p>
+            <p>GitHub: <a href="https://github.com/senthamilraja" target="_blank">github.com/senthamilraja</a></p>
+        </div>
+    </section>
+
+    <section class="text-center section" id="contact">
+        <h2>Get in Touch 🤝</h2>
+        <form class="container" action="sendmail.php" method="POST">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Your Email -->
+                    <input type="email" class="form-control my-2" placeholder="Your Email (CC)" name="_cc" required>
+
+                    <!-- Subject -->
+                    <input type="text" class="form-control my-2" placeholder="Subject" name="_subject" required>
+
+                    <!-- Message -->
+                    <textarea class="form-control my-2" rows="5" placeholder="Your Message" name="message" required></textarea>
+
+                    <!-- Hidden anti-spam and redirect options -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://your-website.com/thank-you.html">
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Senthamil Raja. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
